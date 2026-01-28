@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6F2"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/r_bg"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="250dp"
+            android:text="RECIPE BOOK \n         APP"
+            android:textColor="#4E342E"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Where every recipe feels like home."
+            android:textColor="#3E2723"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#C4A484"
+            android:text="Get Started"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

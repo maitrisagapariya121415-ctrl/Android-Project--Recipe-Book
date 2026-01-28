@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/r_bg3"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CATEGORIES"
+                android:textSize="40sp"
+                android:textStyle="italic"
+                android:textColor="#5D4037"
+                android:layout_centerHorizontal="true"/>
+
+            <!-- Favorites Button -->
+            <ImageView
+                android:id="@+id/btnFav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_favorite_24"
+                android:tint="#5D4037"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- Breakfast -->
+            <LinearLayout
+                android:id="@+id/layBreakfast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/breakfast"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Gujarati -->
+            <LinearLayout
+                android:id="@+id/layGujarati"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gujarati"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gujarati"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Punjabi -->
+            <LinearLayout
+                android:id="@+id/layPunjabi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/punjabi"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punjabi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- South Indian -->
+            <LinearLayout
+                android:id="@+id/laySouth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/south"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="South Indian"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Pizza -->
+            <LinearLayout
+                android:id="@+id/layPizza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pizza"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Chinese -->
+            <LinearLayout
+                android:id="@+id/layChinese"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chinese"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chinese"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Italian -->
+            <LinearLayout
+                android:id="@+id/layItalian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/italian"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Italian"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Mexican -->
+            <LinearLayout
+                android:id="@+id/layMexican"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mexican"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mexican"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Healthy -->
+            <LinearLayout
+                android:id="@+id/layHealthy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/healthy"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Healthy"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+            <!-- Desserts -->
+            <LinearLayout
+                android:id="@+id/layDesserts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dessert"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desserts"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Indian Sweets -->
+            <LinearLayout
+                android:id="@+id/laySweets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sweets"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indian Sweets"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cakes -->
+            <LinearLayout
+                android:id="@+id/layCakes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cakes"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cakes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cookies & Biscuits -->
+            <LinearLayout
+                android:id="@+id/layCookies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cookies"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cookies-Biscuits"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Ice Cream -->
+            <LinearLayout
+                android:id="@+id/layIceCream"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icecream"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ice Cream"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Hot Drinks -->
+            <LinearLayout
+                android:id="@+id/layHotDrinks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hot"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Drinks"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cold Drinks -->
+            <LinearLayout
+                android:id="@+id/layColdDrinks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cold"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cold Drinks"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Juice -->
+            <LinearLayout
+                android:id="@+id/layJuice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/juice"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juice"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Milkshakes -->
+            <LinearLayout
+                android:id="@+id/layMilkshake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/milk"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milkshakes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Smoothies -->
+            <LinearLayout
+                android:id="@+id/laySmoothies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/smoothies"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smoothies"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Mocktails -->
+            <LinearLayout
+                android:id="@+id/layMocktails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/moacktails"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mocktails"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
